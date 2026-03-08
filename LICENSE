@@ -1,0 +1,39 @@
+Copyright (c) 2026 Iasmim Oliveira. All rights reserved.
+
+This repository contains code of different origins, governed as follows:
+
+
+── SECTION 1 — PROPRIETARY CREATIVE WORK ──────────────────────────────────────
+
+The following is the exclusive intellectual property of Iasmim Oliveira and is
+protected by copyright law:
+
+  libs/domain/intelligence/       — The semantic resurfacing algorithm,
+                                    StillMoment concept, SimilarityScore domain
+                                    model, and ResurfacingService logic.
+
+This creative work represents an original idea and technical solution conceived
+and authored solely by Iasmim Oliveira. No permission is granted to any person
+or entity to use, copy, modify, distribute, sublicense, or sell this work or
+any derivative of it without express prior written consent from the author.
+
+For licensing inquiries: oliv.iasmim@gmail.com
+
+
+── SECTION 2 — SCAFFOLDING, FRAMEWORK & AI-ASSISTED CODE ──────────────────────
+
+All remaining code in this repository — including but not limited to application
+scaffolding, NestJS/React/Expo/Tauri boilerplate, Nx configuration, CI workflows,
+domain stubs for writing/library/publishing, and code generated or assisted by
+AI tools — is provided as-is for personal and educational use.
+
+Third-party open source packages retain their original licenses as declared in
+their respective package.json / pyproject.toml / Cargo.toml files.
+
+
+── DISCLAIMER ──────────────────────────────────────────────────────────────────
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.

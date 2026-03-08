@@ -1,7 +1,10 @@
 # Nx
-.nx/cache
-.nx/polygraph
-.nx/workspace-data
+.nx/
+
+# Local-only (IDE, AI tooling, plans)
+.windsurf/
+.claude/
+.plans/
 
 # Dependencies
 node_modules
