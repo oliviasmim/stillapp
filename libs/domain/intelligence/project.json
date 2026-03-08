@@ -1,0 +1,9 @@
+{
+  "name": "intelligence",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/domain/intelligence/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project intelligence --web",
+  "targets": {}
+}

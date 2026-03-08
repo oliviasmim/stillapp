@@ -1,0 +1,41 @@
+name: CI — AI Service
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/ai-service/**'
+  pull_request:
+    paths:
+      - 'apps/ai-service/**'
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: latest
+          enable-cache: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: uv sync --dev
+        working-directory: apps/ai-service
+
+      - name: Lint
+        run: uv run ruff check src tests
+        working-directory: apps/ai-service
+
+      - name: Type check
+        run: uv run mypy src
+        working-directory: apps/ai-service
+
+      - name: Test
+        run: uv run pytest
+        working-directory: apps/ai-service

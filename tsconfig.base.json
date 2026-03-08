@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "api-contracts": ["libs/api-contracts/src/index.ts"],
+      "intelligence": ["libs/domain/intelligence/src/index.ts"],
+      "library": ["libs/domain/library/src/index.ts"],
+      "publishing": ["libs/domain/publishing/src/index.ts"],
+      "ui-native": ["libs/ui/native/src/index.ts"],
+      "ui-web": ["libs/ui/web/src/index.ts"],
+      "writing": ["libs/domain/writing/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

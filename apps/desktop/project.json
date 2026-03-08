@@ -1,0 +1,39 @@
+{
+  "name": "desktop",
+  "$schema": "../../node_modules/nx/schemas/project.json",
+  "projectType": "application",
+  "root": "apps/desktop",
+  "sourceRoot": "apps/desktop/src",
+  "tags": ["scope:desktop", "type:app", "platform:tauri"],
+  "implicitDependencies": ["web"],
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm tauri dev",
+        "cwd": "apps/desktop"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm tauri build",
+        "cwd": "apps/desktop"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cargo clippy --manifest-path src-tauri/Cargo.toml -- -D warnings",
+        "cwd": "apps/desktop"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cargo test --manifest-path src-tauri/Cargo.toml",
+        "cwd": "apps/desktop"
+      }
+    }
+  }
+}

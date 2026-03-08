@@ -1,0 +1,73 @@
+# Nx
+.nx/cache
+.nx/polygraph
+.nx/workspace-data
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+dist
+build
+out
+.next
+.expo
+
+# Test coverage
+coverage
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+*.pem
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Editor
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python
+__pycache__
+*.py[cod]
+.venv
+.uv
+*.egg-info
+.ruff_cache
+.pytest_cache
+.mypy_cache
+
+# Tauri
+apps/desktop/src-tauri/target
+
+vite.config.*.timestamp*
+vitest.config.*.timestamp*
+
+# Expo
+node_modules/
+.expo/
+.yarn/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+cache/
+

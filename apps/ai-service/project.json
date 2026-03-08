@@ -1,0 +1,52 @@
+{
+  "name": "ai-service",
+  "$schema": "../../node_modules/nx/schemas/project.json",
+  "projectType": "application",
+  "root": "apps/ai-service",
+  "sourceRoot": "apps/ai-service/src",
+  "tags": ["scope:ai-service", "type:app", "platform:python"],
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run uvicorn src.main:app --reload --host 0.0.0.0 --port 8001",
+        "cwd": "apps/ai-service"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv build",
+        "cwd": "apps/ai-service"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run ruff check src tests",
+        "cwd": "apps/ai-service"
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run mypy src",
+        "cwd": "apps/ai-service"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run pytest",
+        "cwd": "apps/ai-service"
+      }
+    },
+    "sync-deps": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv sync",
+        "cwd": "apps/ai-service"
+      }
+    }
+  }
+}
